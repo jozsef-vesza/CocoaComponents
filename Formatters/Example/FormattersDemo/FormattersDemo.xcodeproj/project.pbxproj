@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB108B14219E2EBE003A3788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB108B13219E2EBE003A3788 /* AppDelegate.swift */; };
+		BB108B16219E2EBE003A3788 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB108B15219E2EBE003A3788 /* ViewController.swift */; };
+		BB108B18219E2ECA003A3788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB108B17219E2ECA003A3788 /* Assets.xcassets */; };
+		BB108B1B219E2ECA003A3788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB108B19219E2ECA003A3788 /* Main.storyboard */; };
+		BB108B2D219E2F03003A3788 /* Formatters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB108B2A219E2EF7003A3788 /* Formatters.framework */; };
+		BB108B2E219E2F03003A3788 /* Formatters.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BB108B2A219E2EF7003A3788 /* Formatters.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB108B29219E2EF7003A3788 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB108B24219E2EF7003A3788 /* Formatters.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BB108AE5219E2A5A003A3788;
+			remoteInfo = Formatters;
+		};
+		BB108B2B219E2EF7003A3788 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB108B24219E2EF7003A3788 /* Formatters.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BB108AEE219E2A5A003A3788;
+			remoteInfo = FormattersTests;
+		};
+		BB108B2F219E2F03003A3788 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB108B24219E2EF7003A3788 /* Formatters.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BB108AE4219E2A5A003A3788;
+			remoteInfo = Formatters;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB108B31219E2F03003A3788 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BB108B2E219E2F03003A3788 /* Formatters.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BB108B10219E2EBE003A3788 /* FormattersDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormattersDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB108B13219E2EBE003A3788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB108B15219E2EBE003A3788 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB108B17219E2ECA003A3788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB108B1A219E2ECA003A3788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB108B1C219E2ECA003A3788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB108B1D219E2ECA003A3788 /* FormattersDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FormattersDemo.entitlements; sourceTree = "<group>"; };
+		BB108B24219E2EF7003A3788 /* Formatters.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Formatters.xcodeproj; path = ../../Formatters.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB108B0D219E2EBE003A3788 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB108B2D219E2F03003A3788 /* Formatters.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB108B07219E2EBE003A3788 = {
+			isa = PBXGroup;
+			children = (
+				BB108B24219E2EF7003A3788 /* Formatters.xcodeproj */,
+				BB108B12219E2EBE003A3788 /* FormattersDemo */,
+				BB108B11219E2EBE003A3788 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB108B11219E2EBE003A3788 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB108B10219E2EBE003A3788 /* FormattersDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB108B12219E2EBE003A3788 /* FormattersDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BB108B13219E2EBE003A3788 /* AppDelegate.swift */,
+				BB108B15219E2EBE003A3788 /* ViewController.swift */,
+				BB108B17219E2ECA003A3788 /* Assets.xcassets */,
+				BB108B19219E2ECA003A3788 /* Main.storyboard */,
+				BB108B1C219E2ECA003A3788 /* Info.plist */,
+				BB108B1D219E2ECA003A3788 /* FormattersDemo.entitlements */,
+			);
+			path = FormattersDemo;
+			sourceTree = "<group>";
+		};
+		BB108B25219E2EF7003A3788 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB108B2A219E2EF7003A3788 /* Formatters.framework */,
+				BB108B2C219E2EF7003A3788 /* FormattersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB108B0F219E2EBE003A3788 /* FormattersDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB108B20219E2ECA003A3788 /* Build configuration list for PBXNativeTarget "FormattersDemo" */;
+			buildPhases = (
+				BB108B0C219E2EBE003A3788 /* Sources */,
+				BB108B0D219E2EBE003A3788 /* Frameworks */,
+				BB108B0E219E2EBE003A3788 /* Resources */,
+				BB108B31219E2F03003A3788 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB108B30219E2F03003A3788 /* PBXTargetDependency */,
+			);
+			name = FormattersDemo;
+			productName = FormattersDemo;
+			productReference = BB108B10219E2EBE003A3788 /* FormattersDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB108B08219E2EBE003A3788 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "József Vesza";
+				TargetAttributes = {
+					BB108B0F219E2EBE003A3788 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = BB108B0B219E2EBE003A3788 /* Build configuration list for PBXProject "FormattersDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB108B07219E2EBE003A3788;
+			productRefGroup = BB108B11219E2EBE003A3788 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BB108B25219E2EF7003A3788 /* Products */;
+					ProjectRef = BB108B24219E2EF7003A3788 /* Formatters.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BB108B0F219E2EBE003A3788 /* FormattersDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BB108B2A219E2EF7003A3788 /* Formatters.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Formatters.framework;
+			remoteRef = BB108B29219E2EF7003A3788 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB108B2C219E2EF7003A3788 /* FormattersTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FormattersTests.xctest;
+			remoteRef = BB108B2B219E2EF7003A3788 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB108B0E219E2EBE003A3788 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB108B18219E2ECA003A3788 /* Assets.xcassets in Resources */,
+				BB108B1B219E2ECA003A3788 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB108B0C219E2EBE003A3788 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB108B16219E2EBE003A3788 /* ViewController.swift in Sources */,
+				BB108B14219E2EBE003A3788 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB108B30219E2F03003A3788 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Formatters;
+			targetProxy = BB108B2F219E2F03003A3788 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB108B19219E2ECA003A3788 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB108B1A219E2ECA003A3788 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB108B1E219E2ECA003A3788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB108B1F219E2ECA003A3788 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		BB108B21219E2ECA003A3788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FormattersDemo/FormattersDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FormattersDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.jozsefvesza.FormattersDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		BB108B22219E2ECA003A3788 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FormattersDemo/FormattersDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FormattersDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.jozsefvesza.FormattersDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB108B0B219E2EBE003A3788 /* Build configuration list for PBXProject "FormattersDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB108B1E219E2ECA003A3788 /* Debug */,
+				BB108B1F219E2ECA003A3788 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB108B20219E2ECA003A3788 /* Build configuration list for PBXNativeTarget "FormattersDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB108B21219E2ECA003A3788 /* Debug */,
+				BB108B22219E2ECA003A3788 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB108B08219E2EBE003A3788 /* Project object */;
+}
