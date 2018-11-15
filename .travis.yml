@@ -1,0 +1,4 @@
+language: swift
+osx_image: xcode10.1
+script:
+  - xcodebuild -project Formatters/Formatters.xcodeproj -scheme Formatters test
