@@ -32,21 +32,47 @@ public class CustomPaddingButtonCell: NSButtonCell {
         return imageHeight > titleHeight ? imageHeight : titleHeight
     }
     
-    public override func titleRect(forBounds rect: NSRect) -> NSRect {
-        return CGRect(x: paddingLeft,
-                      y: rect.height / 2 - titleSize.height / 2,
-                      width: titleSize.width,
-                      height: titleSize.height)
+    override public func titleRect(forBounds rect: NSRect) -> NSRect {
+        let sizingRect = NSRect(origin: NSPoint.zero, size: titleSize)
+        if imagePosition == .imageRight {
+            return frameForDrawingRect(sizingRect, inBounds: rect)
+        } else {
+            let imageFrame = imageRect(forBounds: rect)
+            return frameForDrawingRect(sizingRect, relativeTo: imageFrame, inBounds: rect)
+        }
     }
     
-    public override func imageRect(forBounds rect: NSRect) -> NSRect {
-        guard let height = image?.size.height, let width = image?.size.width else { return CGRect.zero }
-        let titleFrame = titleRect(forBounds: rect)
+    override public func imageRect(forBounds rect: NSRect) -> NSRect {
+        guard let image = image else { return NSRect.zero }
+        let sizingRect = NSRect(origin: NSPoint.zero,
+                                size: NSSize(width: image.size.width,
+                                             height: image.size.height))
+        if imagePosition == .imageLeft {
+            return frameForDrawingRect(sizingRect, inBounds: rect)
+        } else {
+            let titleFrame = titleRect(forBounds: rect)
+            return frameForDrawingRect(sizingRect, relativeTo: titleFrame, inBounds: rect)
+        }
+    }
+    
+    private func frameForDrawingRect(_ rect: NSRect,
+                                     inBounds boundingRect: NSRect) -> NSRect {
+        return CGRect(x: paddingLeft,
+                      y: boundingRect.height / 2 - rect.height / 2,
+                      width: rect.width,
+                      height: rect.height)
+    }
+    
+    private func frameForDrawingRect(_ primaryRect: NSRect,
+                                     relativeTo otherRect: NSRect,
+                                     inBounds boundingRect: NSRect) -> NSRect {
+        let width = primaryRect.width
+        let height = primaryRect.height
         let x = imageHugsTitle ?
-            paddingLeft + titleFrame.width + imageToTextPadding :
-            rect.width - paddingRight - width
+            paddingLeft + otherRect.width + imageToTextPadding :
+            boundingRect.width - paddingRight - width
         return CGRect(x: x,
-                      y: rect.height / 2 - height / 2,
+                      y: boundingRect.height / 2 - height / 2,
                       width: width,
                       height: height)
     }
