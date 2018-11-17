@@ -20,7 +20,10 @@ class ViewController: NSViewController {
         paddedButton.wantsLayer = true
         paddedButton.attributedTitle = NSAttributedString(
             string: "Padded Button",
-            attributes: [.foregroundColor: NSColor.white]
+            attributes: [
+                .foregroundColor: NSColor.white,
+                .font: NSFont.systemFont(ofSize: 12)
+            ]
         )
         paddedButton.layer?.backgroundColor = NSColor.blue.cgColor
         paddedButton.layer?.cornerRadius = paddedButton.bounds.height / 2

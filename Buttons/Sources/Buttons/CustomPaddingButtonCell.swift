@@ -18,8 +18,7 @@ public class CustomPaddingButtonCell: NSButtonCell {
     @IBInspectable public var imageHugsTitle: Bool = false
     
     private var titleSize: NSSize {
-        // FIXME: The width attribtuedTitle.size() returns is not enough to contain the title. This is a temporary workaround.
-        return NSSize(width: ceil(attributedTitle.size().width) + 10,
+        return NSSize(width: ceil(attributedTitle.size().width),
                       height: ceil(attributedTitle.size().height))
     }
     
