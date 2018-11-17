@@ -28,4 +28,4 @@ dateInputField.formatter = dateInputFormatter
 dateInputFormatter.dateFormat = "MMM"
 ```
 
-See [Example](Example) for a complete demo.
+See [FormattersDemo](Example/FormattersDemo) for a complete demo.
