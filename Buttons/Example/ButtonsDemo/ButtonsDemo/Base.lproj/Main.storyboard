@@ -767,9 +767,9 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Dz3-jA-Ica" customClass="FlatButton" customModule="Buttons">
-                                <rect key="frame" x="20" y="79" width="65" height="17"/>
-                                <buttonCell key="cell" type="square" title="Padded" bezelStyle="shadowlessSquare" image="NSActionTemplate" imagePosition="right" alignment="center" imageScaling="proportionallyDown" inset="2" id="sU4-Q4-6Ij" customClass="CustomPaddingButtonCell" customModule="Buttons">
+                            <button horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Dz3-jA-Ica" customClass="CustomPaddingButton" customModule="Buttons">
+                                <rect key="frame" x="20" y="56" width="108" height="40"/>
+                                <buttonCell key="cell" type="square" title="Padded Button" bezelStyle="shadowlessSquare" image="NSActionTemplate" imagePosition="right" alignment="center" imageScaling="proportionallyDown" inset="2" id="sU4-Q4-6Ij" customClass="CustomPaddingButtonCell" customModule="Buttons">
                                     <behavior key="behavior" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                     <userDefinedRuntimeAttributes>
@@ -788,19 +788,19 @@
                                         <userDefinedRuntimeAttribute type="number" keyPath="imageToTextPadding">
                                             <real key="value" value="10"/>
                                         </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="imageHugsTitle" value="NO"/>
                                     </userDefinedRuntimeAttributes>
                                 </buttonCell>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                        <color key="value" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="disabledBackgroundColor">
-                                        <color key="value" red="0.89411764709999997" green="0.89411764709999997" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0lo-e2-oTN">
+                                <rect key="frame" x="125" y="116" width="53" height="18"/>
+                                <buttonCell key="cell" type="check" title="Wide" bezelStyle="regularSquare" imagePosition="left" inset="2" id="gA0-iB-nci">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="wideToggleChanged:" target="XfG-lQ-9wD" id="HyB-oc-a8b"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -810,16 +810,21 @@
                             <constraint firstItem="R8Z-Jo-GP3" firstAttribute="top" secondItem="vXj-b7-IhY" secondAttribute="bottom" constant="40" id="Ci8-Js-IQP"/>
                             <constraint firstItem="vXj-b7-IhY" firstAttribute="top" secondItem="FDr-pv-U7u" secondAttribute="bottom" constant="20" id="ClJ-qh-4T5"/>
                             <constraint firstItem="CWo-Wr-F3F" firstAttribute="centerY" secondItem="FDr-pv-U7u" secondAttribute="centerY" id="DTF-98-X8i"/>
+                            <constraint firstItem="0lo-e2-oTN" firstAttribute="centerY" secondItem="R8Z-Jo-GP3" secondAttribute="centerY" id="Iwd-1w-7YK"/>
                             <constraint firstItem="CWo-Wr-F3F" firstAttribute="leading" secondItem="FDr-pv-U7u" secondAttribute="trailing" constant="40" id="KWG-A2-1eE"/>
                             <constraint firstItem="FDr-pv-U7u" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="PK9-Ic-Gea"/>
                             <constraint firstItem="Dz3-jA-Ica" firstAttribute="top" secondItem="R8Z-Jo-GP3" secondAttribute="bottom" constant="20" id="Wmt-lK-WQw"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="R8Z-Jo-GP3" secondAttribute="trailing" constant="20" symbolic="YES" id="Ycu-BX-z42"/>
                             <constraint firstItem="Dz3-jA-Ica" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="aSM-dH-oxc"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Dz3-jA-Ica" secondAttribute="trailing" constant="20" id="bIH-2V-2bQ"/>
+                            <constraint firstItem="Dz3-jA-Ica" firstAttribute="width" secondItem="vXj-b7-IhY" secondAttribute="width" priority="250" id="bi5-9T-BQh"/>
+                            <constraint firstItem="Dz3-jA-Ica" firstAttribute="height" secondItem="vXj-b7-IhY" secondAttribute="height" id="iMp-ti-e10"/>
+                            <constraint firstItem="0lo-e2-oTN" firstAttribute="leading" secondItem="CWo-Wr-F3F" secondAttribute="leading" id="jMQ-hc-eXe"/>
                             <constraint firstItem="R8Z-Jo-GP3" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="pbG-gT-Skm"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="fixedWidthContraint" destination="bi5-9T-BQh" id="4rl-0L-FQd"/>
                         <outlet property="flatButton" destination="vXj-b7-IhY" id="ZWa-7d-C75"/>
                         <outlet property="paddedButton" destination="Dz3-jA-Ica" id="tNg-IV-8UY"/>
                     </connections>

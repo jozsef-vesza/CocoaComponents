@@ -10,6 +10,7 @@
 		BB69113D21A0609900961DDD /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB69113C21A0609900961DDD /* FlatButton.swift */; };
 		BB69113F21A0610600961DDD /* NonDimmingButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB69113E21A0610600961DDD /* NonDimmingButtonCell.swift */; };
 		BB69114121A0613E00961DDD /* CustomPaddingButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB69114021A0613E00961DDD /* CustomPaddingButtonCell.swift */; };
+		BBCBD91C21A06F9000936C64 /* CustomPaddingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCBD91B21A06F9000936C64 /* CustomPaddingButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		BB69113C21A0609900961DDD /* FlatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatButton.swift; sourceTree = "<group>"; };
 		BB69113E21A0610600961DDD /* NonDimmingButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonDimmingButtonCell.swift; sourceTree = "<group>"; };
 		BB69114021A0613E00961DDD /* CustomPaddingButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPaddingButtonCell.swift; sourceTree = "<group>"; };
+		BBCBD91B21A06F9000936C64 /* CustomPaddingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPaddingButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				BB69113C21A0609900961DDD /* FlatButton.swift */,
 				BB69113E21A0610600961DDD /* NonDimmingButtonCell.swift */,
 				BB69114021A0613E00961DDD /* CustomPaddingButtonCell.swift */,
+				BBCBD91B21A06F9000936C64 /* CustomPaddingButton.swift */,
 			);
 			name = Buttons;
 			path = Sources/Buttons;
@@ -139,6 +142,7 @@
 			files = (
 				BB69113D21A0609900961DDD /* FlatButton.swift in Sources */,
 				BB69114121A0613E00961DDD /* CustomPaddingButtonCell.swift in Sources */,
+				BBCBD91C21A06F9000936C64 /* CustomPaddingButton.swift in Sources */,
 				BB69113F21A0610600961DDD /* NonDimmingButtonCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
