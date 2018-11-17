@@ -14,6 +14,15 @@ Custom `NSButtonCell` implementation to customize text appearance in disabled st
 
 Custom `NSButtonCell` implementation to customize the content padding within the button.
 
-![](Docs/padded-screenshot.png)
+### Image hugging
+
+You can specify the image hugging behavior by setting the cell's `imageHugsTitle` property.
+
+![](Docs/hug.gif)
+![](Docs/nohug.gif)
+
+## CustomPaddingButton
+
+`CustomPaddingButton` returns the intrinsic content size based on `CustomPaddingButtonCell`'s size calculations.
 
 See [ButtonsDemo](Example/ButtonsDemo) for a complete demo.

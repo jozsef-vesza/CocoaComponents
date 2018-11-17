@@ -788,7 +788,7 @@
                                         <userDefinedRuntimeAttribute type="number" keyPath="imageToTextPadding">
                                             <real key="value" value="10"/>
                                         </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="boolean" keyPath="imageHugsTitle" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="imageHugsTitle" value="YES"/>
                                     </userDefinedRuntimeAttributes>
                                 </buttonCell>
                             </button>
