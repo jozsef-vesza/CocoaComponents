@@ -18,6 +18,7 @@ public class FlatButton: NSButton {
     }
     
     @IBInspectable public var disabledBackgroundColor: NSColor = .clear
+    @IBInspectable public var disabledBorderColor: NSColor = .clear
     
     @IBInspectable public var borderColor: NSColor = .clear {
         didSet {
@@ -35,6 +36,7 @@ public class FlatButton: NSButton {
     override public var isEnabled: Bool {
         didSet {
             updateBackground()
+            updateBorder()
         }
     }
     
@@ -60,6 +62,6 @@ public class FlatButton: NSButton {
     
     private func updateBorder() {
         layer?.borderWidth = borderWidth
-        layer?.borderColor = borderColor.cgColor
+        layer?.borderColor = isEnabled ? borderColor.cgColor : disabledBorderColor.cgColor
     }
 }
