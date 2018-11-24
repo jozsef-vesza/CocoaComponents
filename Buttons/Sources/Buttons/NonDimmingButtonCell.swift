@@ -11,14 +11,14 @@ import Cocoa
 /// Custom `NSButtonCell` implementation to customize text appearance in disabled state
 public class NonDimmingButtonCell: NSButtonCell {
     
-    @IBInspectable public var enabledTextColor: NSColor = .clear
-    @IBInspectable public var disabledTextColor: NSColor = .clear
+    public var enabledTextColor: NSColor = .clear
+    public var disabledTextColor: NSColor = .clear
     
     override public func drawTitle(_ title: NSAttributedString,
-                                     withFrame frame: NSRect,
-                                     in controlView: NSView) -> NSRect {
+                                   withFrame frame: NSRect,
+                                   in controlView: NSView) -> NSRect {
         
-        guard let button = controlView as? FlatButton else {
+        guard let button = controlView as? NSButton else {
             return super.drawTitle(title, withFrame: frame, in: controlView)
         }
         

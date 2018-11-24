@@ -18,7 +18,19 @@ public class FlatButton: NSButton {
     }
     
     @IBInspectable public var disabledBackgroundColor: NSColor = .clear
+    
     @IBInspectable public var disabledBorderColor: NSColor = .clear
+    
+    @IBInspectable public var enabledTextColor: NSColor = .clear {
+        didSet {
+            updateCell()
+        }
+    }
+    @IBInspectable public var disabledTextColor: NSColor = .clear {
+        didSet {
+            updateCell()
+        }
+    }
     
     @IBInspectable public var borderColor: NSColor = .clear {
         didSet {
@@ -29,6 +41,12 @@ public class FlatButton: NSButton {
     @IBInspectable public var borderWidth: CGFloat = 0 {
         didSet {
             updateBorder()
+        }
+    }
+    
+    @IBInspectable public var cornerRadius: CGFloat = 0 {
+        didSet {
+            layer?.cornerRadius = cornerRadius
         }
     }
     
@@ -54,6 +72,8 @@ public class FlatButton: NSButton {
     // MARK: - Helpers
     private func setup() {
         wantsLayer = true
+        cell = NonDimmingButtonCell()
+        updateCell()
     }
     
     private func updateBackground() {
@@ -63,5 +83,12 @@ public class FlatButton: NSButton {
     private func updateBorder() {
         layer?.borderWidth = borderWidth
         layer?.borderColor = isEnabled ? borderColor.cgColor : disabledBorderColor.cgColor
+    }
+    
+    private func updateCell() {
+        guard let cell = cell as? NonDimmingButtonCell else { return }
+        cell.enabledTextColor = enabledTextColor
+        cell.disabledTextColor = disabledTextColor
+        cell.bezelStyle = .shadowlessSquare
     }
 }

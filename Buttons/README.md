@@ -6,7 +6,7 @@ An easy-to-use `NSButton` subclass to support flat appearance.
 
 ## NonDimmingButtonCell
 
-Custom `NSButtonCell` implementation to customize text appearance in disabled state. By default `NSButton` dims its text when disabled, you can use `NonDimmingButtonCell` to prevent this.
+Custom `NSButtonCell` implementation to customize text appearance in disabled state. By default `NSButton` dims its text when disabled, you can use `NonDimmingButtonCell` to prevent this. `FlatButton` uses `NonDimmingButtonCell` internally.
 
 ![](Docs/enabled-toggle.gif)
 
