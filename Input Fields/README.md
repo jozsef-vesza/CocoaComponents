@@ -1,4 +1,4 @@
-### InputFields
+# InputFields
 
 A collection of various input field implementations to use in Cocoa apps.
 
