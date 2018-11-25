@@ -739,6 +739,10 @@
                             <constraint firstItem="S3C-kx-Mp6" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="NXJ-25-ARn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="focusCheckingTextField" destination="S3C-kx-Mp6" id="dWG-3Z-z8D"/>
+                        <outlet property="regularTextField" destination="ccv-d7-lIe" id="kpx-UX-GIa"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,21 +7,28 @@
 //
 
 import Cocoa
+import InputFields
 
 class ViewController: NSViewController {
-
+    
+    @IBOutlet private weak var focusCheckingTextField: FocusCheckingTextField!
+    @IBOutlet private weak var regularTextField: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        focusCheckingTextField.delegate = self
+        regularTextField.delegate = self
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-
 }
 
+extension ViewController: NSTextFieldDelegate {
+    func controlTextDidBeginEditing(_ obj: Notification) {
+        guard let sender = obj.object as? NSTextField else { return }
+        if sender == focusCheckingTextField {
+            print("focus checking text field editing")
+        } else {
+            print("regular text field editing")
+        }
+    }
+}
