@@ -6,9 +6,14 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BBC5E3BB21AAD9200020F118 /* FocusCheckingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC5E3BA21AAD9200020F118 /* FocusCheckingTextField.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		BBC5E38B21AAD2B90020F118 /* InputFields.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InputFields.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC5E38F21AAD2B90020F118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBC5E3BA21AAD9200020F118 /* FocusCheckingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusCheckingTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,7 @@
 		BBC5E38D21AAD2B90020F118 /* InputFields */ = {
 			isa = PBXGroup;
 			children = (
+				BBC5E3BA21AAD9200020F118 /* FocusCheckingTextField.swift */,
 				BBC5E38F21AAD2B90020F118 /* Info.plist */,
 			);
 			name = InputFields;
@@ -89,6 +95,7 @@
 				TargetAttributes = {
 					BBC5E38A21AAD2B90020F118 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -124,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBC5E3BB21AAD9200020F118 /* FocusCheckingTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +262,7 @@
 		BBC5E39421AAD2B90020F118 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -272,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hu.jozsefvesza.InputFields;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -279,6 +289,7 @@
 		BBC5E39521AAD2B90020F118 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
