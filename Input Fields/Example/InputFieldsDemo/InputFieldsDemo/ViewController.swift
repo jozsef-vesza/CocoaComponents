@@ -13,12 +13,17 @@ class ViewController: NSViewController {
     
     @IBOutlet private weak var focusCheckingTextField: FocusCheckingTextField!
     @IBOutlet private weak var regularTextField: NSTextField!
+    @IBOutlet private weak var secureTextField: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         focusCheckingTextField.delegate = self
         regularTextField.delegate = self
+    }
+    
+    @IBAction private func showPasswordToggleChanged(_ sender: NSButton) {
+        secureTextField.isSecure = sender.state != .on
     }
 }
 
