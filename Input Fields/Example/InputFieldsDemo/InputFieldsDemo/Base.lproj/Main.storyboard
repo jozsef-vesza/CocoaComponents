@@ -706,7 +706,7 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="InputFieldsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="546" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S3C-kx-Mp6" customClass="FocusCheckingTextField" customModule="InputFields">
@@ -731,17 +731,57 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wMw-oy-6Kn">
+                                <rect key="frame" x="18" y="149" width="103" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Secure text field" id="ExK-zo-uTI">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lec-o1-dg9">
+                                <rect key="frame" x="20" y="107" width="96" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="LEu-6D-h7J"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="QKa-07-syS">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecure" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="64W-0e-Z04">
+                                <rect key="frame" x="134" y="109" width="82" height="18"/>
+                                <buttonCell key="cell" type="check" title="Show text" bezelStyle="regularSquare" imagePosition="left" inset="2" id="AQC-vP-1dz">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="showPasswordToggleChanged:" target="XfG-lQ-9wD" id="3BH-12-bXv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="ccv-d7-lIe" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="4MY-FX-WWa"/>
+                            <constraint firstItem="64W-0e-Z04" firstAttribute="centerY" secondItem="Lec-o1-dg9" secondAttribute="centerY" id="8E7-IY-zNG"/>
+                            <constraint firstItem="Lec-o1-dg9" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="9QR-py-pHg"/>
                             <constraint firstItem="ccv-d7-lIe" firstAttribute="top" secondItem="S3C-kx-Mp6" secondAttribute="bottom" constant="20" id="Gq3-Eg-3xI"/>
                             <constraint firstItem="S3C-kx-Mp6" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="N8w-46-0rC"/>
                             <constraint firstItem="S3C-kx-Mp6" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="NXJ-25-ARn"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wMw-oy-6Kn" secondAttribute="trailing" constant="427" id="NeT-HO-1IF"/>
+                            <constraint firstItem="Lec-o1-dg9" firstAttribute="top" secondItem="wMw-oy-6Kn" secondAttribute="bottom" constant="20" id="Qkn-Vf-pbk"/>
+                            <constraint firstItem="wMw-oy-6Kn" firstAttribute="top" secondItem="ccv-d7-lIe" secondAttribute="bottom" constant="20" id="dYG-iZ-oz0"/>
+                            <constraint firstItem="wMw-oy-6Kn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" symbolic="YES" id="nKh-VX-3IG"/>
+                            <constraint firstItem="64W-0e-Z04" firstAttribute="leading" secondItem="Lec-o1-dg9" secondAttribute="trailing" constant="20" id="tkP-fv-haY"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="focusCheckingTextField" destination="S3C-kx-Mp6" id="dWG-3Z-z8D"/>
                         <outlet property="regularTextField" destination="ccv-d7-lIe" id="kpx-UX-GIa"/>
+                        <outlet property="secureTextField" destination="Lec-o1-dg9" id="VK1-8s-n13"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

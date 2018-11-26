@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB0186BF21AB0255009911A1 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0186BE21AB0255009911A1 /* SecureTextField.swift */; };
 		BBC5E3BB21AAD9200020F118 /* FocusCheckingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC5E3BA21AAD9200020F118 /* FocusCheckingTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB0186BE21AB0255009911A1 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
 		BBC5E38B21AAD2B90020F118 /* InputFields.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InputFields.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC5E38F21AAD2B90020F118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBC5E3BA21AAD9200020F118 /* FocusCheckingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusCheckingTextField.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			children = (
 				BBC5E3BA21AAD9200020F118 /* FocusCheckingTextField.swift */,
 				BBC5E38F21AAD2B90020F118 /* Info.plist */,
+				BB0186BE21AB0255009911A1 /* SecureTextField.swift */,
 			);
 			name = InputFields;
 			path = Sources/InputFields;
@@ -131,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB0186BF21AB0255009911A1 /* SecureTextField.swift in Sources */,
 				BBC5E3BB21AAD9200020F118 /* FocusCheckingTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

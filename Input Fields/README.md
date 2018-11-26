@@ -12,5 +12,10 @@ When text fields get input focus, they do not actually become first responders r
 
 `FocusCheckingTextField` leverages this behavior: it queries whether it has a field editor assigned. Once it has the field editor, it will senf `controlTextDidBeginEditing(_:)` to its delegate (just as a regular text field would), so it can react to the focus change.
 
-See [InputFieldsDemo](Example/InputFieldsDemo) for a concrete example.
+## SecureTextField
 
+[SecureTextField](Sources/SecureTextField.swift) contains an extension of `NSTextField`, which allows hiding/revealing input characters. To achieve this, the text field swaps its cell (`NSTextFieldCell` for regular, `NSSecureTextFieldCell` for secure input) when its `isSecure` property is set.
+
+## Demo 
+
+See [InputFieldsDemo](Example/InputFieldsDemo) for a concrete example.
